@@ -1,18 +1,37 @@
-# Project Title
+# Module 2 Challenge
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+The main purpose of this application is to assist the user with applying for loans. AFter prompting the user to enter their information, it will compare the entries with data grabbed from a CSV file, containing the 
+requirements of all available lenders. Afterwards, the application will save a file of the loans the user qualifies for.
 
+
+
+	
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+This application is entirely coded in Python- it uses the libraries `sys`, `fire`, `questionary`, `csv`, and `pathlib`. The Python version is 3.8.8.
 
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+We use the `pip` package-management system to install the `fire` and `questionary` libraries. 
+
+```bash
+pip install fire
+pip install questionary
+```
+
+From there on, we can just import the remaining packages that we require. 
+
+```python
+import sys
+import fire
+import questionary
+import csv
+from pathlib import Path
+```
 
 ---
 
@@ -20,14 +39,21 @@ In this section, you should include detailed installation notes containing code 
 
 This section should include screenshots, code blocks, or animations explaining how to use your project.
 
+When you run the main module file app.py, the user must enter a file path to a rate sheet. There is already a rate sheet provided in the data folder but the user may choose to use another rate sheet if they wish.
+Afterwards, the user is prompted by the program to enter their information. Loan factors are calculated and the qualified loans are saved as a list of lists. If you wish to save the qualified loans onto a CSV file,
+the user must specify the file path where the file is to be saved.
+![](https://i.imgur.com/xc6fFnv.jpg)
+
+To modify the functions, the other module files are located in the qualifier folder.
+
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+The starting unmodified code can be found on the [Columbia Fintech Bootcamp online portal](https://courses.bootcampspot.com/courses/825/files/898978/download).
+
 
 ---
 
 ## License
-
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+Please use this code however you wish.

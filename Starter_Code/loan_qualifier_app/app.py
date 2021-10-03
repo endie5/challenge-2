@@ -104,6 +104,18 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered
 
 def save_csv(data, csvpath, header = None):
+    """Saves the information to a CSV file named 'qualifying_loans'
+    
+    Args:
+        data (list): The list of data that will be written onto the CSV file.
+        csvpath (path): The path where the CSV file is to be saved.
+        header (list): The headers of the CSV file. By default, it is set to None.
+    
+    Returns:
+        A CSV file.
+    
+    
+    """
     with open (csvpath + "\qualifying_loans.csv", "w", newline= "") as csvfile:
         write = csv.writer(csvfile)
         if header:
@@ -117,6 +129,9 @@ def save_qualifying_loans(qualifying_loans):
 
     Args:
         qualifying_loans (list of lists): The qualifying bank loans.
+    
+    Returns:
+        A CSV file that contains the qualifying loans, saved at the specified path.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
