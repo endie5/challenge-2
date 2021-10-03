@@ -1,0 +1,50 @@
+  215  cd Fintech-Workspace/
+  216  ls
+  217  git clone https://github.com/endie5/challenge2.git
+  218  cd desktop/fintech\ bootcamp/
+  219  cd Fintech-Workspace/
+  220  ls
+  221  git clone https://github.com/endie5/challenge-2.git
+  222  git status
+  223  cd challenge-2
+  224  git status
+  225  git add -A
+  226  git commit -m(This is the starting file)
+  227  git commit
+  228  git commit
+  229  git status
+  230  git push
+  231  pwd
+  232  cd Desktop/fintech\ bootcamp/Fintech-Workspace/
+  233  ls
+  234  cd challenge-2
+  235  git status
+  236  git add -A
+  237  git commit -m(Finished the challenge for this week, updating .readme file has not been done yet)
+  238  git commit -m"Finished the challenge for this week, updating .readme file has not been done yet"
+  239  git status
+  240  git push
+  241  history 50 > terminal_history.txt
+  242  pwd
+  243  C:/Users/ahe04/anaconda3/Scripts/activate
+  244  conda activate base
+  245  python --version
+  246  pwd
+  247  cd activities/
+  248  ls
+  249  cd ..
+  250  ls
+  251  cd Fintech-Workspace/
+  252  cd challenge-2/Starter_Code/loan_qualifier_app/
+  253  ls
+  254  python app.py
+  255  git status
+  256  git add-A
+  257  git add -A
+  258  git commit -m "This should be the final version of this repo"
+  259  git push
+  260  git status
+  261  pwd
+  262  cd ..
+  263  cd ..
+  264  history 50 > terminal_history.txt
